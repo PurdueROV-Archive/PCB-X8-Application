@@ -10057,22 +10057,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="PIN44" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PA11"/>
-<wire x1="-12.7" y1="160.02" x2="-20.32" y2="160.02" width="0.1524" layer="91"/>
-<label x="-20.32" y="160.02" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="SV4" gate="G$1" pin="12"/>
 <wire x1="81.28" y1="58.42" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 <label x="83.82" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIN45" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PA12"/>
-<wire x1="-12.7" y1="157.48" x2="-20.32" y2="157.48" width="0.1524" layer="91"/>
-<label x="-20.32" y="157.48" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="SV4" gate="G$1" pin="13"/>
 <wire x1="66.04" y1="60.96" x2="63.5" y2="60.96" width="0.1524" layer="91"/>
@@ -10664,12 +10654,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="325.12" y1="137.16" x2="332.74" y2="137.16" width="0.1524" layer="91"/>
 <label x="327.66" y="137.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA11"/>
+<wire x1="-12.7" y1="160.02" x2="-20.32" y2="160.02" width="0.1524" layer="91"/>
+<label x="-20.32" y="160.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="USBD+" class="0">
 <segment>
 <pinref part="RN1" gate="B" pin="2"/>
 <wire x1="325.12" y1="132.08" x2="332.74" y2="132.08" width="0.1524" layer="91"/>
 <label x="327.66" y="132.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="PA12"/>
+<wire x1="-12.7" y1="157.48" x2="-20.32" y2="157.48" width="0.1524" layer="91"/>
+<label x="-20.32" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
