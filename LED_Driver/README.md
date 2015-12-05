@@ -20,6 +20,9 @@
 		c). Wiring the resistor-divider circuit nearby and parallel, makes it better for noise tolerance.
 		d). Draw wire far away from switching node of inductor and diode. Do not wire directly below the inductor and diode, and not
 		parallel to power supply line. Multilayer board must be also wired in the same way. 
+	- Proper land pattern of power components to minimize impedance: (Application Notes 136, Page 7)
+		http://cds.linear.com/docs/en/application-note/an136f.pdf
+	
 
 (recommendations drawn from: http://rohmfs.rohm.com/en/products/databook/applinote/ic/power/switching_regulator/converter_pcb_layout_appli-e.pdf)
 
