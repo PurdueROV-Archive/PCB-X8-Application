@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9323,10 +9323,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="D3" library="SparkFun-LED" deviceset="LED-RED" device="0603" value="RED"/>
 <part name="D4" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="D5" library="SparkFun-LED" deviceset="LED-GREEN" device="0603" value="GREEN"/>
-<part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
+<part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="82"/>
+<part name="R4" library="rcl" deviceset="R-US_" device="R0603" value="82"/>
+<part name="R5" library="rcl" deviceset="R-US_" device="R0603" value="10"/>
+<part name="R6" library="rcl" deviceset="R-US_" device="R0603" value="82"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="U$5" library="MAX3051 Library" deviceset="MAX3051" device="MAX3051"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
