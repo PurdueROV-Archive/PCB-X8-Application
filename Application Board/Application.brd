@@ -161,8 +161,10 @@
 <text x="3.81" y="8.382" size="0.6096" layer="21">CAM_LEDV</text>
 <text x="9.652" y="8.636" size="0.6096" layer="21">+5V</text>
 <text x="14.986" y="8.636" size="0.6096" layer="21">+12V</text>
-<text x="43.688" y="36.83" size="1.27" layer="21" rot="R270">Rodolfo Leiva, Qiyue Liang,
-Xinyi Jiang, Vincent Mow</text>
+<text x="42.164" y="36.068" size="1.143" layer="21" rot="R270">Rodolfo E. Leiva, 
+Qiyue (Jennifer) Liang,
+Xinyi (Erin) Jiang, 
+Wen Shen (Vincent) Mow</text>
 <text x="8.382" y="16.256" size="2.54" layer="21">PURDUE IEEE ROV</text>
 </plain>
 <libraries>
@@ -3448,7 +3450,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$2" pad="T26"/>
 <via x="-0.661921875" y="66.349878125" extent="1-16" drill="0.508"/>
 <via x="-0.153921875" y="18.343878125" extent="1-16" drill="0.508"/>
-<via x="43.026078125" y="18.089878125" extent="1-16" drill="0.508"/>
+<via x="45.312078125" y="15.803878125" extent="1-16" drill="0.508"/>
 <via x="46.836078125" y="66.349878125" extent="1-16" drill="0.508"/>
 <via x="37.438078125" y="59.745878125" extent="1-16" drill="0.508"/>
 <via x="-1.423921875" y="55.935878125" extent="1-16" drill="0.508"/>
@@ -3458,7 +3460,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="45.566078125" y="63.301878125" extent="1-16" drill="0.508"/>
 <via x="37.184078125" y="63.809878125" extent="1-16" drill="0.508"/>
 <via x="39.470078125" y="51.109878125" extent="1-16" drill="0.508"/>
-<via x="47.344078125" y="35.869878125" extent="1-16" drill="0.508"/>
+<via x="46.328078125" y="33.583878125" extent="1-16" drill="0.508"/>
 <via x="38.454078125" y="35.107878125" extent="1-16" drill="0.508"/>
 <via x="33.120078125" y="34.853878125" extent="1-16" drill="0.508" diameter="0.3048"/>
 <via x="38.200078125" y="30.027878125" extent="1-16" drill="0.508"/>
