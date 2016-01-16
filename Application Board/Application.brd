@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -156,11 +156,14 @@
 <wire x1="49.53" y1="0" x2="49.53" y2="68.58" width="0" layer="20"/>
 <wire x1="49.53" y1="68.58" x2="-3.302" y2="68.58" width="0" layer="20"/>
 <wire x1="-3.302" y1="68.58" x2="-3.302" y2="0" width="0" layer="20"/>
-<text x="30.734" y="20.32" size="2.1844" layer="121" rot="R180">Aplication Board</text>
+<text x="34.036" y="14.732" size="2.1844" layer="121" rot="R180">Application Board</text>
 <text x="26.416" y="31.242" size="0.6096" layer="21">C_IN1</text>
 <text x="3.81" y="8.382" size="0.6096" layer="21">CAM_LEDV</text>
 <text x="9.652" y="8.636" size="0.6096" layer="21">+5V</text>
 <text x="14.986" y="8.636" size="0.6096" layer="21">+12V</text>
+<text x="43.688" y="36.83" size="1.27" layer="21" rot="R270">Rodolfo Leiva, Qiyue Liang,
+Xinyi Jiang, Vincent Mow</text>
+<text x="8.382" y="16.256" size="2.54" layer="21">PURDUE IEEE ROV</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2404,7 +2407,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$2" pad="T26"/>
 <via x="-0.661921875" y="66.349878125" extent="1-16" drill="0.508"/>
 <via x="-0.153921875" y="18.343878125" extent="1-16" drill="0.508"/>
-<via x="46.328078125" y="17.581878125" extent="1-16" drill="0.508"/>
+<via x="43.026078125" y="18.089878125" extent="1-16" drill="0.508"/>
 <via x="46.836078125" y="66.349878125" extent="1-16" drill="0.508"/>
 <via x="36.168078125" y="60.761878125" extent="1-16" drill="0.508"/>
 <via x="37.946078125" y="58.729878125" extent="1-16" drill="0.508"/>
@@ -2414,7 +2417,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="45.566078125" y="63.301878125" extent="1-16" drill="0.508"/>
 <via x="37.184078125" y="63.809878125" extent="1-16" drill="0.508"/>
 <via x="39.470078125" y="51.109878125" extent="1-16" drill="0.508"/>
-<via x="45.312078125" y="31.551878125" extent="1-16" drill="0.508"/>
+<via x="47.344078125" y="35.869878125" extent="1-16" drill="0.508"/>
 <via x="38.454078125" y="35.107878125" extent="1-16" drill="0.508"/>
 <via x="33.120078125" y="34.853878125" extent="1-16" drill="0.508" diameter="0.3048"/>
 <via x="38.200078125" y="30.027878125" extent="1-16" drill="0.508"/>
@@ -2431,8 +2434,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="38.454078125" y="8.437878125" extent="1-16" drill="0.508"/>
 <via x="12.292078125" y="29.011878125" extent="1-16" drill="0.508"/>
 <polygon width="0.4064" layer="1" rank="6">
-<vertex x="-12.954" y="70.104"/>
-<vertex x="-13.208" y="37.846"/>
+<vertex x="-8.89" y="69.088"/>
+<vertex x="-9.398" y="37.592"/>
 <vertex x="11.684" y="37.338"/>
 <vertex x="11.684" y="28.194"/>
 <vertex x="-7.874" y="28.194"/>
@@ -2441,7 +2444,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <vertex x="53.34" y="69.088"/>
 </polygon>
 <polygon width="0.4064" layer="16" rank="6">
-<vertex x="-12.192" y="69.088"/>
+<vertex x="-9.652" y="69.342"/>
 <vertex x="-9.906" y="37.084"/>
 <vertex x="11.176" y="37.084"/>
 <vertex x="11.43" y="28.448"/>
@@ -3424,4 +3427,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
