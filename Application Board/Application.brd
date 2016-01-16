@@ -156,9 +156,11 @@
 <wire x1="49.53" y1="0" x2="49.53" y2="68.58" width="0" layer="20"/>
 <wire x1="49.53" y1="68.58" x2="-3.302" y2="68.58" width="0" layer="20"/>
 <wire x1="-3.302" y1="68.58" x2="-3.302" y2="0" width="0" layer="20"/>
-<text x="29.94151875" y="31.760159375" size="0.6096" layer="25" rot="R90">V_IN</text>
-<text x="24.86151875" y="30.490159375" size="0.6096" layer="25">GND</text>
 <text x="30.734" y="20.32" size="2.1844" layer="121" rot="R180">Aplication Board</text>
+<text x="26.416" y="31.242" size="0.6096" layer="21">C_IN1</text>
+<text x="3.81" y="8.382" size="0.6096" layer="21">CAM_LEDV</text>
+<text x="9.652" y="8.636" size="0.6096" layer="21">+5V</text>
+<text x="14.986" y="8.636" size="0.6096" layer="21">+12V</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2054,147 +2056,244 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="rcl" package="C0603" value="2.2uF" x="24.77971875" y="46.2687375" rot="MR90"/>
-<element name="C10" library="rcl" package="C0603" value="1uF" x="20.12971875" y="46.342959375" rot="MR90"/>
-<element name="C11" library="rcl" package="C0603" value="0.1uF" x="19.85771875" y="50.175159375" rot="MR90"/>
-<element name="C2" library="rcl" package="C0603" value="2.2uF" x="28.906440625" y="51.22231875" rot="MR180"/>
-<element name="C3" library="rcl" package="C0603" value="0.1uF" x="15.50791875" y="45.953559375" rot="MR0"/>
-<element name="C4" library="rcl" package="C0603" value="0.1uF" x="28.553559375" y="44.58568125" rot="MR180"/>
-<element name="C5" library="rcl" package="C0603" value="0.1uF" x="28.916159375" y="53.48648125" rot="MR180"/>
-<element name="C6" library="rcl" package="C0603" value="0.1uF" x="20.572959375" y="55.20148125" rot="MR90"/>
-<element name="C7" library="rcl" package="C0603" value="10nF" x="2.92551875" y="52.252159375"/>
-<element name="C8" library="rcl" package="C0603" value="4.7uF" x="18.439359375" y="55.24488125" rot="MR90"/>
-<element name="C9" library="rcl" package="C0603" value="0.1uF" x="22.40031875" y="46.260759375" rot="MR90"/>
-<element name="D1" library="DiscreteComponents" package="DO-214AC" value="" x="44.92751875" y="49.032159375" rot="R180"/>
-<element name="ASV" library="DiscreteComponents" package="ASF" value="8.000MHZ" x="3.52551875" y="55.890159375" rot="R90">
-<attribute name="DIGIKEY" value="535-10066-1-ND" x="3.52551875" y="55.890159375" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C1" library="rcl" package="C0603" value="2.2uF" x="24.77971875" y="46.2687375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="27.0102625" y="47.00471875" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="28.0262625" y="46.24271875" size="0.6096" layer="28" rot="MR0"/>
 </element>
-<element name="R1" library="rcl" package="R0603" value="10K" x="15.71751875" y="56.652159375" rot="MR90"/>
-<element name="R2" library="rcl" package="R0603" value="10K" x="3.01751875" y="50.048159375" rot="R180"/>
-<element name="RN1" library="DiscreteComponents" package="EXBV4V" value="" x="41.11751875" y="57.890159375" rot="R90">
-<attribute name="MPN" value="MNR12ERAPJ220" x="41.11751875" y="57.890159375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MF" value="Rohm Semiconductor" x="41.11751875" y="57.890159375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY" value="RHM1381CT-ND" x="41.11751875" y="57.890159375" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="C10" library="rcl" package="C0603" value="1uF" x="20.12971875" y="46.342959375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="20.840040625" y="44.13271875" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="20.840040625" y="43.37071875" size="0.6096" layer="28" rot="MR0"/>
 </element>
-<element name="SV1" library="con-lsta" package="FE08-2" value="Left" x="8.98651875" y="48.270159375" rot="R270">
+<element name="C11" library="rcl" package="C0603" value="0.1uF" x="19.85771875" y="50.175159375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="18.531840625" y="50.71871875" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="18.531840625" y="49.95671875" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="C2" library="rcl" package="C0603" value="2.2uF" x="28.906440625" y="51.22231875" smashed="yes" rot="MR180">
+<attribute name="NAME" x="29.287440625" y="50.07931875" size="0.6096" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="28.271440625" y="49.31731875" size="0.6096" layer="28" rot="MR180"/>
+</element>
+<element name="C3" library="rcl" package="C0603" value="0.1uF" x="15.50791875" y="45.953559375" smashed="yes" rot="MR0">
+<attribute name="NAME" x="16.90491875" y="47.858559375" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="16.90491875" y="47.096559375" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="C4" library="rcl" package="C0603" value="0.1uF" x="28.553559375" y="44.58568125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="29.993440625" y="42.91731875" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="29.993440625" y="42.15531875" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="C5" library="rcl" package="C0603" value="0.1uF" x="28.916159375" y="53.48648125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="30.392840625" y="55.35251875" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="30.392840625" y="54.59051875" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="C6" library="rcl" package="C0603" value="0.1uF" x="20.572959375" y="55.20148125" smashed="yes" rot="MR90">
+<attribute name="NAME" x="21.63351875" y="57.529959375" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="21.63351875" y="56.767959375" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="C7" library="rcl" package="C0603" value="10nF" x="2.92551875" y="52.252159375" smashed="yes">
+<attribute name="NAME" x="0.25851875" y="52.125159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="-0.50348125" y="49.077159375" size="0.6096" layer="27"/>
+</element>
+<element name="C8" library="rcl" package="C0603" value="4.7uF" x="18.439359375" y="55.24488125" smashed="yes" rot="MR90">
+<attribute name="NAME" x="19.05011875" y="57.682359375" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="19.05011875" y="56.920359375" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="C9" library="rcl" package="C0603" value="0.1uF" x="22.40031875" y="46.260759375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="23.208240625" y="48.68931875" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="24.224240625" y="47.92731875" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="D1" library="DiscreteComponents" package="DO-214AC" value="" x="44.92751875" y="49.032159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="43.65751875" y="51.191159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="47.46751875" y="52.207159375" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="ASV" library="DiscreteComponents" package="ASF" value="8.000MHZ" x="3.27151875" y="55.890159375" smashed="yes" rot="R90">
+<attribute name="DIGIKEY" value="535-10066-1-ND" x="3.27151875" y="55.890159375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="3.545840625" y="59.15151875" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="7.08151875" y="53.350159375" size="0.6096" layer="27" rot="R90"/>
+</element>
+<element name="R1" library="rcl" package="R0603" value="10K" x="15.71751875" y="56.652159375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="16.118840625" y="54.45251875" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="16.118840625" y="53.69051875" size="0.6096" layer="28" rot="MR0"/>
+</element>
+<element name="R2" library="rcl" package="R0603" value="10K" x="3.01751875" y="50.048159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="1.36651875" y="50.429159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="1.11251875" y="51.953159375" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="RN1" library="DiscreteComponents" package="EXBV4V" value="" x="41.87951875" y="57.890159375" smashed="yes" rot="R90">
+<attribute name="MPN" value="MNR12ERAPJ220" x="41.87951875" y="57.890159375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Rohm Semiconductor" x="41.87951875" y="57.890159375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY" value="RHM1381CT-ND" x="41.87951875" y="57.890159375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="43.773340625" y="59.40551875" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="44.41951875" y="56.302659375" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="SV1" library="con-lsta" package="FE08-2" value="Left" x="8.98651875" y="48.270159375" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="8.98651875" y="48.270159375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="8.98651875" y="48.270159375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="8.98651875" y="48.270159375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="8.98651875" y="48.270159375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="8.371840625" y="58.64351875" size="0.6096" layer="25" ratio="10"/>
+<attribute name="VALUE" x="10.403840625" y="58.64351875" size="0.6096" layer="27" ratio="10"/>
 </element>
-<element name="SV2" library="con-lsta" package="FE08-2" value="Top" x="22.32151875" y="61.605159375" rot="R180">
+<element name="SV2" library="con-lsta" package="FE08-2" value="Top" x="22.32151875" y="61.605159375" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="22.32151875" y="61.605159375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="22.32151875" y="61.605159375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="22.32151875" y="61.605159375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.32151875" y="61.605159375" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="30.44951875" y="65.542159375" size="0.6096" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="32.22751875" y="65.542159375" size="0.6096" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="SV3" library="con-lsta" package="FE08-2" value="Bottom" x="22.32151875" y="35.062159375">
+<element name="SV3" library="con-lsta" package="FE08-2" value="Bottom" x="22.32151875" y="35.062159375" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="22.32151875" y="35.062159375" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="22.32151875" y="35.062159375" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="22.32151875" y="35.062159375" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="22.32151875" y="35.062159375" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="26.13151875" y="38.491159375" size="0.6096" layer="25" ratio="10"/>
+<attribute name="VALUE" x="28.16351875" y="38.491159375" size="0.6096" layer="27" ratio="10"/>
 </element>
-<element name="SV4" library="con-lsta" package="FE08-2" value="Right" x="35.65651875" y="48.270159375" rot="R90">
+<element name="SV4" library="con-lsta" package="FE08-2" value="Right" x="35.65651875" y="48.270159375" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="35.65651875" y="48.270159375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="35.65651875" y="48.270159375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="35.65651875" y="48.270159375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="35.65651875" y="48.270159375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="34.279840625" y="37.81551875" size="0.6096" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="38.597840625" y="37.81551875" size="0.6096" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="T1" library="DiscreteComponents" package="SOT-23" value="FDN340P" x="41.06671875" y="54.670959375" rot="R180">
+<element name="T1" library="DiscreteComponents" package="SOT-23" value="FDN340P" x="41.06671875" y="54.670959375" smashed="yes" rot="R180">
 <attribute name="DIGIKEY" value="FDN340PCT-ND" x="41.06671875" y="54.670959375" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="42.97171875" y="53.146959375" size="0.6096" layer="27" ratio="10" rot="R180"/>
+<attribute name="NAME" x="42.71771875" y="55.940959375" size="0.6096" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="U$1" library="Other" package="LQFP64" value="STM32F405" x="22.32151875" y="48.270159375"/>
-<element name="S1" library="DiscreteComponents" package="SW_2512" value="SWITCH" x="7.33551875" y="61.732159375" rot="R180"/>
-<element name="S2" library="DiscreteComponents" package="SW_2512" value="SWITCH" x="3.52551875" y="43.952159375" rot="R270"/>
-<element name="U$4" library="Other" package="MICRO_B" value="MICROUSB" x="49.5046" y="58.214259375" rot="R90"/>
-<element name="D2" library="SparkFun-LED" package="LED-0603" value="Yellow" x="46.19751875" y="46.492159375" rot="R270">
+<element name="U$1" library="Other" package="LQFP64" value="STM32F405" x="22.32151875" y="48.270159375" smashed="yes">
+<attribute name="NAME" x="19.35151875" y="48.700159375" size="0.6096" layer="21"/>
+<attribute name="VALUE" x="16.62751875" y="41.388159375" size="0.6096" layer="21"/>
+</element>
+<element name="S1" library="DiscreteComponents" package="SW_2512" value="BOOT" x="7.33551875" y="61.732159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="4.28751875" y="64.399159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="8.09751875" y="64.399159375" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="S2" library="DiscreteComponents" package="SW_2512" value="RESET" x="3.52551875" y="44.460159375" smashed="yes" rot="R270">
+<attribute name="NAME" x="0.243840625" y="47.59451875" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="-1.788159375" y="45.05451875" size="0.6096" layer="27"/>
+</element>
+<element name="U$4" library="Other" package="MICRO_B" value="MICROUSB" x="49.5046" y="58.214259375" smashed="yes" rot="R90"/>
+<element name="D2" library="SparkFun-LED" package="LED-0603" value="Yellow" x="46.19751875" y="46.492159375" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="DIO-09003" x="46.19751875" y="46.492159375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="47.84851875" y="46.174659375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="45.18151875" y="45.158659375" size="0.6096" layer="27"/>
 </element>
-<element name="D3" library="SparkFun-LED" package="LED-0603" value="RED" x="46.19751875" y="44.206159375" rot="R270">
+<element name="D3" library="SparkFun-LED" package="LED-0603" value="RED" x="46.19751875" y="44.206159375" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="DIO-00819" x="46.19751875" y="44.206159375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="47.84851875" y="43.888659375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="45.18151875" y="42.872659375" size="0.6096" layer="27"/>
 </element>
-<element name="D4" library="SparkFun-LED" package="LED-0603" value="BLUE" x="46.19751875" y="41.920159375" rot="R270">
+<element name="D4" library="SparkFun-LED" package="LED-0603" value="BLUE" x="46.19751875" y="41.920159375" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="DIO-08575" x="46.19751875" y="41.920159375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="47.84851875" y="41.602659375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="45.18151875" y="40.586659375" size="0.6096" layer="27"/>
 </element>
-<element name="D5" library="SparkFun-LED" package="LED-0603" value="GREEN" x="46.19751875" y="39.634159375" rot="R270">
+<element name="D5" library="SparkFun-LED" package="LED-0603" value="GREEN" x="46.19751875" y="39.634159375" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="DIO-00821" x="46.19751875" y="39.634159375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="47.84851875" y="39.316659375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="45.18151875" y="38.300659375" size="0.6096" layer="27"/>
 </element>
-<element name="R3" library="rcl" package="R0603" value="82" x="43.14951875" y="46.492159375" rot="R180"/>
-<element name="R4" library="rcl" package="R0603" value="82" x="43.14951875" y="44.206159375" rot="R180"/>
-<element name="R5" library="rcl" package="R0603" value="10" x="43.14951875" y="41.920159375" rot="R180"/>
-<element name="R6" library="rcl" package="R0603" value="82" x="43.14951875" y="39.634159375" rot="R180"/>
+<element name="R3" library="rcl" package="R0603" value="82" x="43.14951875" y="46.492159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="41.49851875" y="47.127159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="41.49851875" y="46.365159375" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="R4" library="rcl" package="R0603" value="82" x="43.14951875" y="44.206159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="41.49851875" y="44.587159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="41.49851875" y="43.825159375" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="R5" library="rcl" package="R0603" value="10" x="43.14951875" y="41.920159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="41.49851875" y="42.555159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="41.49851875" y="41.793159375" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="R6" library="rcl" package="R0603" value="82" x="43.14951875" y="39.634159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="41.49851875" y="40.523159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="41.49851875" y="39.761159375" size="0.6096" layer="27" rot="R180"/>
+</element>
 <element name="U$5" library="MAX3051 Library" package="SOT23-8L" value="MAX3051MAX3051" x="36.03751875" y="34.808159375" smashed="yes" rot="R180">
-<attribute name="NAME" x="37.94251875" y="36.713159375" size="0.6096" layer="25" rot="R270"/>
+<attribute name="NAME" x="37.708840625" y="35.91051875" size="0.6096" layer="25"/>
 </element>
 <element name="R13" library="rcl" package="R0603" value="120" x="36.03751875" y="31.760159375" smashed="yes" rot="R180">
-<attribute name="NAME" x="36.67251875" y="31.125159375" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="36.67251875" y="33.665159375" size="0.6096" layer="27" rot="R180"/>
+<attribute name="NAME" x="34.38651875" y="32.395159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="34.38651875" y="31.633159375" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R14" library="rcl" package="R0603" value="100K" x="38.83151875" y="32.268159375" smashed="yes" rot="R270">
-<attribute name="NAME" x="39.46651875" y="32.903159375" size="0.6096" layer="25" rot="R270"/>
-<attribute name="VALUE" x="36.92651875" y="32.903159375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="39.994840625" y="32.60851875" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="39.994840625" y="31.84651875" size="0.6096" layer="27"/>
 </element>
-<element name="T2" library="PowerComponents" package="SOT223" value="AP1117_LIN_REG" x="37.05351875" y="62.240159375" rot="R90"/>
-<element name="C12" library="rcl" package="C0603" value="0.22uF" x="45.43551875" y="52.080159375" rot="R180"/>
-<element name="C14" library="rcl" package="C0603" value="0.22uF" x="43.14951875" y="62.748159375"/>
-<element name="C_F" library="eagle-ltspice" package="C0603" value="1.0E-6" x="30.32251875" y="27.721559375" smashed="yes" rot="R270">
+<element name="T2" library="PowerComponents" package="SOT223" value="AP1117_LIN_REG" x="37.05351875" y="62.240159375" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.303840625" y="67.27951875" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="40.589840625" y="66.49351875" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="C12" library="rcl" package="C0603" value="0.22uF" x="45.43551875" y="52.080159375" smashed="yes" rot="R180">
+<attribute name="NAME" x="48.61051875" y="52.969159375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="VALUE" x="49.62651875" y="52.207159375" size="0.6096" layer="27" rot="R180"/>
+</element>
+<element name="C14" library="rcl" package="C0603" value="0.22uF" x="43.14951875" y="62.748159375" smashed="yes">
+<attribute name="NAME" x="42.00651875" y="64.907159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="42.00651875" y="64.145159375" size="0.6096" layer="27"/>
+</element>
+<element name="C_F" library="eagle-ltspice" package="C0603" value="1.0uF" x="30.32251875" y="27.721559375" smashed="yes" rot="R270">
 <attribute name="SPICEMODEL" value="NONE" x="30.32251875" y="27.721559375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="30.32251875" y="27.721559375" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="30.06851875" y="30.896559375" size="0.6096" layer="25" rot="R270"/>
-<attribute name="VALUE" x="29.17951875" y="28.864559375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="29.474159375" y="25.562559375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="29.486859375" y="24.7523" size="0.6096" layer="27"/>
 </element>
-<element name="C_IN1" library="eagle-ltspice" package="C0603" value="2.2E-6" x="27.27451875" y="29.601159375" smashed="yes" rot="R270">
+<element name="C_IN1" library="eagle-ltspice" package="C0603" value="2.2uF" x="27.27451875" y="29.601159375" smashed="yes" rot="R270">
 <attribute name="SPICEMODEL" value="NONE" x="27.27451875" y="29.601159375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="27.27451875" y="29.601159375" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="25.36951875" y="30.236159375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="VALUE" x="26.13151875" y="30.236159375" size="0.6096" layer="27" rot="R270"/>
 </element>
-<element name="C_IN2" library="eagle-ltspice" package="C0603" value="2.2E-6" x="25.11551875" y="29.601159375" smashed="yes" rot="R270">
+<element name="C_IN2" library="eagle-ltspice" package="C0603" value="2.2uF" x="25.11551875" y="29.601159375" smashed="yes" rot="R270">
 <attribute name="SPICEMODEL" value="NONE" x="25.11551875" y="29.601159375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="25.11551875" y="29.601159375" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="24.60751875" y="31.506159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="23.21051875" y="30.236159375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="23.84551875" y="31.252159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="23.97251875" y="30.236159375" size="0.6096" layer="27" rot="R270"/>
 </element>
-<element name="C_OFF" library="eagle-ltspice" package="C0402" value="470E-12" x="18.76551875" y="26.045159375" smashed="yes" rot="R270">
+<element name="C_OFF" library="eagle-ltspice" package="C0402" value="470pF" x="18.76551875" y="26.045159375" smashed="yes" rot="R270">
 <attribute name="SPICEMODEL" value="NONE" x="18.76551875" y="26.045159375" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="18.76551875" y="26.045159375" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="18.13051875" y="24.775159375" size="0.6096" layer="25" rot="R90"/>
-<attribute name="VALUE" x="19.65451875" y="27.188159375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="17.2593" y="23.876" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="17.261840625" y="22.95651875" size="0.6096" layer="27"/>
 </element>
 <element name="D6" library="DiscreteComponents" package="SL12-E3/61T" value="SL12-E3/61T" x="6.06551875" y="25.791159375" smashed="yes" rot="R180">
-<attribute name="NAME" x="5.43051875" y="23.505159375" size="0.635" layer="25"/>
+<attribute name="NAME" x="3.90651875" y="27.569159375" size="0.6096" layer="25"/>
 </element>
-<element name="L1" library="DiscreteComponents" package="SRN8040" value="15E-6" x="6.95451875" y="32.776159375" smashed="yes" rot="R90">
-<attribute name="NAME" x="1.39851875" y="37.444159375" size="1.778" layer="25"/>
-<attribute name="VALUE" x="5.74751875" y="28.489159375" size="0.6096" layer="27" rot="R180"/>
+<element name="L1" library="DiscreteComponents" package="SRN8040" value="15u" x="6.95451875" y="32.776159375" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.39851875" y="33.380159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="2.44551875" y="32.807159375" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="Q1" library="DiscreteComponents" package="DMP2012SN-7" value="DMP2012SN-7" x="12.84731875" y="25.765759375" smashed="yes" rot="R180">
-<attribute name="NAME" x="11.27231875" y="26.740759375" size="0.6096" layer="25" rot="R180"/>
+<attribute name="NAME" x="11.01831875" y="26.232759375" size="0.6096" layer="25" rot="R180"/>
 </element>
 <element name="R_OFF" library="DiscreteComponents" package="R0603" value="7.87K" x="14.95551875" y="30.490159375" smashed="yes">
-<attribute name="NAME" x="13.93951875" y="31.633159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="14.32051875" y="28.585159375" size="0.6096" layer="27"/>
+<attribute name="NAME" x="13.43151875" y="31.633159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="13.55851875" y="28.839159375" size="0.6096" layer="27"/>
 </element>
-<element name="R_PD" library="DiscreteComponents" package="R0603" value="10K" x="18.63851875" y="30.744159375" smashed="yes">
-<attribute name="NAME" x="14.95551875" y="30.871159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="17.49551875" y="29.093159375" size="0.6096" layer="27"/>
+<element name="R_PD" library="DiscreteComponents" package="R0603" value="10K" x="18.63851875" y="30.490159375" smashed="yes">
+<attribute name="NAME" x="16.98751875" y="31.633159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="16.98751875" y="28.839159375" size="0.6096" layer="27"/>
 </element>
-<element name="R_SNS" library="DiscreteComponents" package="R2512" value="0.365" x="37.56151875" y="26.299159375" smashed="yes">
-<attribute name="NAME" x="30.83051875" y="25.283159375" size="0.635" layer="25"/>
-<attribute name="VALUE" x="35.02151875" y="23.124159375" size="0.6096" layer="27"/>
+<element name="R_SNS" library="DiscreteComponents" package="R2512" value="0.365" x="37.56151875" y="26.045159375" smashed="yes">
+<attribute name="NAME" x="34.13251875" y="28.077159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="34.25951875" y="23.378159375" size="0.6096" layer="27"/>
 </element>
 <element name="R_UV1" library="DiscreteComponents" package="R0603" value="22.6K" x="22.19451875" y="28.585159375" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.90851875" y="29.220159375" size="0.635" layer="25" rot="R270"/>
-<attribute name="VALUE" x="24.60751875" y="27.696159375" size="0.6096" layer="27" rot="R180"/>
+<attribute name="NAME" x="20.817840625" y="29.30651875" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="23.33751875" y="27.950159375" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R_UV2" library="DiscreteComponents" package="R0603" value="13.7K" x="22.19451875" y="30.617159375" smashed="yes">
-<attribute name="NAME" x="21.17851875" y="31.887159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="21.30551875" y="31.506159375" size="0.6096" layer="27"/>
+<attribute name="NAME" x="20.92451875" y="32.141159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="21.028659375" y="31.353759375" size="0.6096" layer="27"/>
 </element>
 <element name="U1" library="2015_LED_Driver" package="VSSOP-10" value="LM3409HV'LM3409HV'" x="25.62351875" y="25.918159375" smashed="yes" rot="R270">
-<attribute name="NAME" x="26.89351875" y="24.013159375" size="0.635" layer="25" rot="R270"/>
+<attribute name="NAME" x="23.992840625" y="23.59151875" size="0.6096" layer="25"/>
 </element>
 <element name="U$2" library="Connectors" package="HSC8-40PINOUUT" value="HSCPART" x="4.54151875" y="0.010159375"/>
-<element name="R7" library="rcl" package="R0603" value="4.7K" x="23.876" y="52.324" rot="MR90"/>
+<element name="R7" library="rcl" package="R0603" value="4.7K" x="23.876" y="52.324" smashed="yes" rot="MR90">
+<attribute name="NAME" x="24.765" y="54.737" size="0.6096" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="24.765" y="53.975" size="0.6096" layer="28" rot="MR0"/>
+</element>
 </elements>
 <signals>
 <signal name="VCAP_1">
@@ -2227,7 +2326,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="28.056440625" y1="51.22231875" x2="27.237096875" y2="51.22231875" width="0.254" layer="16"/>
 <wire x1="27.237096875" y1="51.22231875" x2="26.598878125" y2="50.5206" width="0.254" layer="16"/>
 </signal>
-<signal name="GND" airwireshidden="yes">
+<signal name="GND">
 <contactref element="C8" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C4" pad="2"/>
@@ -2277,10 +2376,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="C_OFF" pad="2"/>
 <contactref element="U1" pad="5"/>
 <contactref element="U1" pad="DAP"/>
-<wire x1="26.25851875" y1="25.283159375" x2="26.25851875" y2="25.283159375" width="0" layer="19" extent="1-16"/>
-<wire x1="24.98851875" y1="26.553159375" x2="24.98851875" y2="26.553159375" width="0" layer="19" extent="1-16"/>
-<wire x1="26.25851875" y1="25.283159375" x2="26.25851875" y2="25.283159375" width="0" layer="19" extent="1-16"/>
-<wire x1="26.25851875" y1="26.553159375" x2="26.25851875" y2="26.553159375" width="0" layer="19" extent="1-16"/>
 <wire x1="23.22321875" y1="24.9174" x2="25.354278125" y2="24.9174" width="0.3048" layer="1"/>
 <wire x1="25.354278125" y1="24.9174" x2="25.62351875" y2="25.156159375" width="0.3048" layer="1"/>
 <via x="21.44775625" y="48.6537" extent="1-16" drill="0.6"/>
@@ -2292,16 +2387,14 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </polygon>
 <wire x1="23.04451875" y1="28.585159375" x2="23.55251875" y2="28.497159375" width="0.3048" layer="1"/>
 <wire x1="23.55251875" y1="28.497159375" x2="25.11551875" y2="26.934159375" width="0.3048" layer="1"/>
-<wire x1="25.62351875" y1="26.426159375" x2="25.62351875" y2="25.918159375" width="0" layer="19" extent="1-16"/>
 <wire x1="25.11551875" y1="28.751159375" x2="25.11551875" y2="26.934159375" width="0.3048" layer="1"/>
-<wire x1="25.11551875" y1="26.934159375" x2="25.62351875" y2="26.426159375" width="0" layer="19" extent="1-16"/>
 <wire x1="27.27451875" y1="28.751159375" x2="27.02051875" y2="27.823159375" width="0.3048" layer="1"/>
 <wire x1="27.02051875" y1="27.823159375" x2="25.62351875" y2="26.426159375" width="0.3048" layer="1"/>
 <contactref element="SV3" pad="11"/>
 <contactref element="SV2" pad="16"/>
 <contactref element="U$2" pad="T20"/>
 <contactref element="U$2" pad="T19"/>
-<via x="29.46501875" y="55.752996875" extent="1-16" drill="0.508"/>
+<via x="30.22701875" y="57.022996875" extent="1-16" drill="0.508"/>
 <via x="14.832078125" y="41.203878125" extent="1-16" drill="0.508"/>
 <contactref element="U$2" pad="T21"/>
 <contactref element="U$2" pad="T24"/>
@@ -2338,8 +2431,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="38.454078125" y="8.437878125" extent="1-16" drill="0.508"/>
 <via x="12.292078125" y="29.011878125" extent="1-16" drill="0.508"/>
 <polygon width="0.4064" layer="1" rank="6">
-<vertex x="-7.874" y="69.596"/>
-<vertex x="-8.128" y="37.338"/>
+<vertex x="-12.954" y="70.104"/>
+<vertex x="-13.208" y="37.846"/>
 <vertex x="11.684" y="37.338"/>
 <vertex x="11.684" y="28.194"/>
 <vertex x="-7.874" y="28.194"/>
@@ -2348,8 +2441,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <vertex x="53.34" y="69.088"/>
 </polygon>
 <polygon width="0.4064" layer="16" rank="6">
-<vertex x="-8.382" y="69.85"/>
-<vertex x="-8.636" y="37.084"/>
+<vertex x="-12.192" y="69.088"/>
+<vertex x="-9.906" y="37.084"/>
 <vertex x="11.176" y="37.084"/>
 <vertex x="11.43" y="28.448"/>
 <vertex x="-8.382" y="28.702"/>
@@ -2387,11 +2480,19 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <vertex x="25.908" y="1.524"/>
 </polygon>
 <via x="22.164040625" y="43.936921875" extent="1-16" drill="0.6"/>
-<via x="33.274" y="59.436" extent="1-16" drill="0.6"/>
-<wire x1="36.168078125" y1="60.761878125" x2="33.274" y2="59.436" width="0" layer="19" extent="1-1"/>
-<wire x1="19.07151875" y1="54.020159375" x2="17.018" y2="54.61" width="0" layer="19" extent="1-1"/>
-<wire x1="4.67551875" y1="57.140159375" x2="13.73631875" y2="55.69381875" width="0" layer="19" extent="1-1"/>
-<wire x1="3.77551875" y1="52.252159375" x2="4.67551875" y2="57.140159375" width="0" layer="19" extent="1-1"/>
+<via x="32.766" y="59.182" extent="1-16" drill="0.6"/>
+<via x="21.082" y="66.294" extent="1-16" drill="0.6"/>
+<via x="12.446" y="38.608" extent="1-16" drill="0.6"/>
+<via x="28.618178125" y="28.3184625" extent="1-16" drill="0.6"/>
+<via x="27.686" y="32.258" extent="1-16" drill="0.6"/>
+<via x="24.638" y="49.784" extent="1-16" drill="0.6"/>
+<via x="19.812" y="32.512" extent="1-16" drill="0.6"/>
+<via x="17.78" y="28.194" extent="1-16" drill="0.6"/>
+<wire x1="19.07151875" y1="54.020159375" x2="19.07151875" y2="55.35048125" width="0.254" layer="1"/>
+<wire x1="19.07151875" y1="55.35048125" x2="14.732" y2="59.69" width="0.254" layer="1"/>
+<wire x1="14.732" y1="59.69" x2="14.732" y2="61.468" width="0.254" layer="1"/>
+<via x="5.588" y="58.928" extent="1-16" drill="0.6"/>
+<via x="5.588" y="52.324" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="OSCIN">
 <contactref element="ASV" pad="3"/>
@@ -2403,11 +2504,12 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="13.96751875" y1="50.020159375" x2="11.90751875" y2="52.080159375" width="0.254" layer="1"/>
 <wire x1="11.90751875" y1="52.080159375" x2="10.25651875" y2="52.080159375" width="0.254" layer="1"/>
 <wire x1="8.33151875" y1="53.370159375" x2="7.08151875" y2="53.350159375" width="0.254" layer="1"/>
-<wire x1="7.08151875" y1="53.350159375" x2="6.06551875" y2="54.874159375" width="0.254" layer="1"/>
-<wire x1="6.06551875" y1="54.874159375" x2="6.06551875" y2="57.922159375" width="0.254" layer="1"/>
-<wire x1="6.06551875" y1="57.922159375" x2="5.30351875" y2="58.684159375" width="0.254" layer="1"/>
-<wire x1="5.30351875" y1="58.684159375" x2="3.91951875" y2="58.684159375" width="0.254" layer="1"/>
-<wire x1="3.91951875" y1="58.684159375" x2="2.37551875" y2="57.140159375" width="0.254" layer="1"/>
+<wire x1="7.08151875" y1="53.350159375" x2="6.096" y2="54.335678125" width="0.254" layer="1"/>
+<wire x1="6.096" y1="54.335678125" x2="6.096" y2="55.118" width="0.254" layer="1"/>
+<wire x1="6.096" y1="55.118" x2="5.334" y2="55.88" width="0.254" layer="1"/>
+<wire x1="5.334" y1="55.88" x2="3.302" y2="55.88" width="0.254" layer="1"/>
+<wire x1="3.302" y1="55.88" x2="2.12151875" y2="57.06048125" width="0.254" layer="1"/>
+<wire x1="2.12151875" y1="57.06048125" x2="2.12151875" y2="57.140159375" width="0.254" layer="1"/>
 </signal>
 <signal name="NRST">
 <contactref element="U$1" pad="7"/>
@@ -2423,9 +2525,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="18.25751875" y="49.032159375" extent="1-16" drill="0.6"/>
 <wire x1="18.25751875" y1="49.032159375" x2="16.98751875" y2="49.032159375" width="0.3048" layer="1"/>
 <wire x1="16.98751875" y1="49.032159375" x2="16.57151875" y2="49.020159375" width="0.254" layer="1"/>
-<wire x1="6.320065625" y1="50.823809375" x2="3.86751875" y2="50.048159375" width="0.254" layer="1"/>
-<wire x1="3.52551875" y1="46.752159375" x2="6.320065625" y2="50.823809375" width="0.254" layer="1"/>
-<wire x1="6.320065625" y1="50.823809375" x2="8.35151875" y2="50.810159375" width="0.254" layer="1"/>
+<wire x1="8.35151875" y1="50.810159375" x2="4.62951875" y2="50.810159375" width="0.254" layer="1"/>
+<wire x1="4.62951875" y1="50.810159375" x2="3.86751875" y2="50.048159375" width="0.254" layer="1"/>
+<wire x1="3.86751875" y1="50.048159375" x2="3.86751875" y2="47.602159375" width="0.254" layer="1"/>
+<wire x1="3.86751875" y1="47.602159375" x2="3.52551875" y2="47.260159375" width="0.254" layer="1"/>
 </signal>
 <signal name="BOOT0">
 <contactref element="U$1" pad="60"/>
@@ -2489,15 +2592,14 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="35.712396875" y="37.3354625" extent="1-16" drill="0.6" diameter="0.3048"/>
 <wire x1="4.53551875" y1="61.732159375" x2="0.73151875" y2="57.922159375" width="0.254" layer="1"/>
 <wire x1="0.73151875" y1="57.922159375" x2="0.73151875" y2="55.776159375" width="0.254" layer="1"/>
-<wire x1="0.73151875" y1="55.776159375" x2="2.37551875" y2="54.640159375" width="0.254" layer="1"/>
-<wire x1="2.37551875" y1="54.640159375" x2="2.12151875" y2="52.460159375" width="0.254" layer="1"/>
+<wire x1="0.73151875" y1="55.776159375" x2="2.12151875" y2="54.640159375" width="0.254" layer="1"/>
+<wire x1="2.12151875" y1="54.640159375" x2="2.12151875" y2="52.460159375" width="0.254" layer="1"/>
 <wire x1="2.12151875" y1="52.460159375" x2="2.07551875" y2="52.252159375" width="0.254" layer="1"/>
 <wire x1="2.16751875" y1="50.048159375" x2="2.07551875" y2="52.252159375" width="0.254" layer="1"/>
 <wire x1="10.25651875" y1="57.160159375" x2="4.53551875" y2="61.732159375" width="0.254" layer="1"/>
-<wire x1="34.38651875" y1="57.160159375" x2="39.46651875" y2="62.240159375" width="0.254" layer="1"/>
 <wire x1="39.46651875" y1="62.240159375" x2="40.25351875" y2="62.240159375" width="0.254" layer="1"/>
 <wire x1="40.25351875" y1="62.240159375" x2="42.29951875" y2="62.748159375" width="0.254" layer="1"/>
-<wire x1="33.85351875" y1="62.240159375" x2="40.25351875" y2="62.240159375" width="0.254" layer="1"/>
+<wire x1="33.85351875" y1="62.240159375" x2="40.25351875" y2="62.240159375" width="1.27" layer="1"/>
 <wire x1="18.439359375" y1="54.39488125" x2="20.572959375" y2="54.35148125" width="0.254" layer="16"/>
 <contactref element="U$2" pad="B29"/>
 <wire x1="31.37751875" y1="36.166159375" x2="29.94151875" y2="34.730159375" width="0.254" layer="16"/>
@@ -2553,6 +2655,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="20.574" y1="53.080440625" x2="20.574" y2="52.324" width="0.4064" layer="16"/>
 <wire x1="20.574" y1="52.324" x2="20.32" y2="52.324" width="0.4064" layer="1"/>
 <wire x1="20.32" y1="52.324" x2="19.304" y2="51.308" width="0.4064" layer="1"/>
+<wire x1="34.38651875" y1="57.160159375" x2="34.38651875" y2="61.707159375" width="1.016" layer="1"/>
+<wire x1="34.38651875" y1="61.707159375" x2="33.85351875" y2="62.240159375" width="1.016" layer="1"/>
 </signal>
 <signal name="PIN14">
 <contactref element="U$1" pad="14"/>
@@ -2789,7 +2893,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <signal name="N$24">
 <contactref element="U$4" pad="P3"/>
 <contactref element="RN1" pad="2"/>
-<wire x1="41.89251875" y1="58.290159375" x2="45.2787" y2="58.290159375" width="0.3048" layer="1"/>
+<wire x1="42.65451875" y1="58.290159375" x2="45.2787" y2="58.290159375" width="0.3048" layer="1"/>
 <wire x1="45.2787" y1="58.290159375" x2="45.3546" y2="58.214259375" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$57">
@@ -2851,8 +2955,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="42.31131875" y1="53.350159375" x2="42.00651875" y2="53.654959375" width="0.254" layer="1"/>
 <wire x1="40.25351875" y1="64.540159375" x2="45.949840625" y2="64.540159375" width="0.3048" layer="1"/>
 <wire x1="45.949840625" y1="64.540159375" x2="46.736" y2="63.754" width="0.3048" layer="1"/>
-<wire x1="46.736" y1="63.754" x2="46.736" y2="52.530640625" width="0.3048" layer="1"/>
+<wire x1="46.736" y1="63.754" x2="46.736" y2="52.832" width="0.3048" layer="1"/>
+<wire x1="46.736" y1="52.832" x2="46.736" y2="52.530640625" width="0.3048" layer="1"/>
 <wire x1="46.736" y1="52.530640625" x2="46.28551875" y2="52.080159375" width="0.3048" layer="1"/>
+<wire x1="46.736" y1="52.832" x2="46.228" y2="52.324" width="0.254" layer="1"/>
 </signal>
 <signal name="N$59">
 <contactref element="D2" pad="A"/>
@@ -2929,7 +3035,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <signal name="N$1">
 <contactref element="RN1" pad="1"/>
 <contactref element="U$4" pad="P2"/>
-<wire x1="41.89251875" y1="57.490159375" x2="45.2805" y2="57.490159375" width="0.3048" layer="1"/>
+<wire x1="42.65451875" y1="57.490159375" x2="45.2805" y2="57.490159375" width="0.3048" layer="1"/>
 <wire x1="45.2805" y1="57.490159375" x2="45.3546" y2="57.564259375" width="0.3048" layer="1"/>
 </signal>
 <signal name="USBD-">
@@ -2941,7 +3047,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="32.73551875" y1="52.080159375" x2="34.38651875" y2="52.080159375" width="0.254" layer="1"/>
 <wire x1="34.38651875" y1="52.080159375" x2="36.54551875" y2="53.350159375" width="0.254" layer="1"/>
 <wire x1="36.54551875" y1="53.350159375" x2="38.06951875" y2="53.350159375" width="0.254" layer="1"/>
-<wire x1="38.06951875" y1="53.350159375" x2="40.34251875" y2="57.490159375" width="0.254" layer="1"/>
+<wire x1="38.06951875" y1="53.350159375" x2="41.10451875" y2="57.490159375" width="0.254" layer="1"/>
 </signal>
 <signal name="USBD+">
 <contactref element="RN1" pad="3"/>
@@ -2954,7 +3060,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="36.92651875" y1="54.620159375" x2="38.57751875" y2="56.271159375" width="0.254" layer="1"/>
 <wire x1="38.57751875" y1="56.271159375" x2="38.57751875" y2="57.414159375" width="0.254" layer="1"/>
 <wire x1="38.57751875" y1="57.414159375" x2="39.45351875" y2="58.290159375" width="0.254" layer="1"/>
-<wire x1="39.45351875" y1="58.290159375" x2="40.34251875" y2="58.290159375" width="0.254" layer="1"/>
+<wire x1="39.45351875" y1="58.290159375" x2="41.10451875" y2="58.290159375" width="0.254" layer="1"/>
 </signal>
 <signal name="CAN2_RX">
 <contactref element="U$1" pad="33"/>
@@ -3114,7 +3220,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U1" pad="7"/>
 <contactref element="Q1" pad="3"/>
 <wire x1="31.21151875" y1="23.098759375" x2="33.44071875" y2="23.098759375" width="0.635" layer="1"/>
-<wire x1="33.44071875" y1="23.098759375" x2="34.76151875" y2="26.299159375" width="0.635" layer="1"/>
+<wire x1="33.44071875" y1="23.098759375" x2="34.76151875" y2="26.045159375" width="0.635" layer="1"/>
 <wire x1="28.02381875" y1="25.417778125" x2="29.4259" y2="25.417778125" width="0.3048" layer="1"/>
 <wire x1="29.4259" y1="25.417778125" x2="31.21151875" y2="23.098759375" width="0.3048" layer="1"/>
 <wire x1="31.21151875" y1="23.098759375" x2="31.21151875" y2="23.08351875" width="0.6096" layer="1"/>
@@ -3135,7 +3241,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U1" pad="3"/>
 <wire x1="23.22321875" y1="25.918159375" x2="22.01671875" y2="25.918159375" width="0.3048" layer="1"/>
 <wire x1="22.01671875" y1="25.918159375" x2="19.48851875" y2="28.446359375" width="0.3048" layer="1"/>
-<wire x1="19.48851875" y1="28.446359375" x2="19.48851875" y2="30.744159375" width="0.3048" layer="1"/>
+<wire x1="19.48851875" y1="28.446359375" x2="19.48851875" y2="30.490159375" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="Q1" pad="2"/>
@@ -3192,7 +3298,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="19.78151875" y1="38.110159375" x2="19.78151875" y2="35.062159375" width="0.254" layer="1"/>
 <contactref element="R_PD" pad="1"/>
 <wire x1="19.78151875" y1="35.062159375" x2="18.51151875" y2="33.792159375" width="0.254" layer="1"/>
-<wire x1="17.78851875" y1="30.744159375" x2="18.51151875" y2="32.815159375" width="0.254" layer="1"/>
+<wire x1="17.78851875" y1="30.490159375" x2="18.51151875" y2="32.815159375" width="0.254" layer="1"/>
 <wire x1="18.51151875" y1="32.815159375" x2="18.51151875" y2="33.792159375" width="0.254" layer="1"/>
 </signal>
 <signal name="+12V">
@@ -3224,30 +3330,22 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="22.57551875" y1="12.456159375" x2="31.71951875" y2="12.456159375" width="1.27" layer="1"/>
 <wire x1="31.71951875" y1="12.456159375" x2="40.35551875" y2="21.092159375" width="1.27" layer="1"/>
 <wire x1="40.35551875" y1="21.092159375" x2="40.35551875" y2="26.293159375" width="1.27" layer="1"/>
-<wire x1="40.35551875" y1="26.293159375" x2="40.36151875" y2="26.299159375" width="1.27" layer="1"/>
+<wire x1="40.35551875" y1="26.293159375" x2="40.36151875" y2="26.045159375" width="1.27" layer="1"/>
 <polygon width="0.254" layer="1" thermals="no">
 <vertex x="18.25751875" y="1.788159375"/>
 <vertex x="13.17751875" y="1.788159375"/>
 <vertex x="13.17751875" y="7.630159375"/>
 <vertex x="18.25751875" y="7.630159375"/>
 </polygon>
-<wire x1="30.34791875" y1="28.788359375" x2="39.791640625" y2="28.788359375" width="1.016" layer="1"/>
-<wire x1="39.791640625" y1="28.788359375" x2="40.132" y2="28.448" width="1.016" layer="1"/>
-<wire x1="40.132" y1="28.448" x2="40.132" y2="26.528678125" width="1.016" layer="1"/>
-<wire x1="40.132" y1="26.528678125" x2="40.36151875" y2="26.299159375" width="1.016" layer="1"/>
+<wire x1="40.132" y1="26.528678125" x2="40.36151875" y2="26.045159375" width="1.016" layer="1"/>
 <wire x1="28.02381875" y1="26.91891875" x2="27.36341875" y2="26.91891875" width="0.3048" layer="1"/>
 <wire x1="27.36341875" y1="26.91891875" x2="27.086559375" y2="26.642059375" width="0.3048" layer="1"/>
 <wire x1="27.086559375" y1="26.642059375" x2="27.086559375" y2="26.18231875" width="0.3048" layer="1"/>
 <wire x1="28.013659375" y1="25.908" x2="28.02381875" y2="25.918159375" width="0.3048" layer="1"/>
 <wire x1="27.086559375" y1="26.18231875" x2="27.35071875" y2="25.918159375" width="0.3048" layer="1"/>
 <wire x1="27.35071875" y1="25.918159375" x2="28.02381875" y2="25.918159375" width="0.3048" layer="1"/>
-<wire x1="15.74151875" y1="2.410159375" x2="15.74151875" y2="6.130159375" width="0" layer="19" extent="1-1"/>
-<wire x1="16.54151875" y1="2.410159375" x2="15.74151875" y2="2.410159375" width="0" layer="19" extent="1-1"/>
-<wire x1="17.34151875" y1="2.410159375" x2="16.54151875" y2="2.410159375" width="0" layer="19" extent="1-1"/>
-<wire x1="18.14151875" y1="2.410159375" x2="17.34151875" y2="2.410159375" width="0" layer="19" extent="1-1"/>
-<wire x1="14.94151875" y1="2.410159375" x2="15.74151875" y2="2.410159375" width="0" layer="19" extent="1-1"/>
-<wire x1="14.14151875" y1="2.410159375" x2="14.94151875" y2="2.410159375" width="0" layer="19" extent="1-1"/>
-<wire x1="13.34151875" y1="2.410159375" x2="14.14151875" y2="2.410159375" width="0" layer="19" extent="1-1"/>
+<wire x1="30.39871875" y1="28.559759375" x2="38.10091875" y2="28.559759375" width="1.016" layer="1"/>
+<wire x1="38.10091875" y1="28.559759375" x2="40.36151875" y2="26.045159375" width="1.016" layer="1"/>
 </signal>
 <signal name="PIN10">
 <contactref element="SV1" pad="9"/>
@@ -3267,26 +3365,61 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="16.57151875" y1="48.520159375" x2="8.73651875" y2="48.520159375" width="0.254" layer="1"/>
 <wire x1="8.73651875" y1="48.520159375" x2="7.71651875" y2="49.540159375" width="0.254" layer="1"/>
 </signal>
-<signal name="N$19">
-<via x="19.812" y="32.512" extent="1-16" drill="0.6"/>
+<signal name="N$22">
+<polygon width="0.254" layer="1" pour="cutout">
+<vertex x="2.286" y="14.478"/>
+<vertex x="2.286" y="7.62" curve="-90"/>
+<vertex x="2.032" y="7.366"/>
+<vertex x="0.254" y="7.366" curve="-90"/>
+<vertex x="0" y="7.62"/>
+<vertex x="0" y="5.588"/>
+<vertex x="4.572" y="5.588"/>
+<vertex x="4.572" y="-0.254"/>
+<vertex x="-3.302" y="-0.254"/>
+<vertex x="-3.302" y="14.478"/>
+</polygon>
 </signal>
-<signal name="N$20">
-<via x="27.686" y="32.258" extent="1-16" drill="0.6"/>
+<signal name="N$26">
+<polygon width="0.254" layer="16" pour="cutout">
+<vertex x="2.286" y="14.478"/>
+<vertex x="2.286" y="7.62" curve="-90"/>
+<vertex x="2.032" y="7.366"/>
+<vertex x="0.254" y="7.366" curve="-90"/>
+<vertex x="0" y="7.62"/>
+<vertex x="0" y="5.588"/>
+<vertex x="4.572" y="5.588"/>
+<vertex x="4.572" y="-0.254"/>
+<vertex x="-3.302" y="-0.254"/>
+<vertex x="-3.302" y="14.478"/>
+</polygon>
 </signal>
-<signal name="N$21">
-<via x="18.288" y="28.448" extent="1-16" drill="0.6"/>
+<signal name="N$27">
+<polygon width="0.254" layer="16" pour="cutout">
+<vertex x="43.18" y="14.478"/>
+<vertex x="43.18" y="7.62" curve="90"/>
+<vertex x="43.434" y="7.366"/>
+<vertex x="44.958" y="7.366" curve="90"/>
+<vertex x="45.212" y="7.62"/>
+<vertex x="45.212" y="5.588"/>
+<vertex x="40.894" y="5.588"/>
+<vertex x="40.894" y="-0.254"/>
+<vertex x="49.784" y="-0.254"/>
+<vertex x="49.784" y="14.478"/>
+</polygon>
 </signal>
-<signal name="N$31">
-<via x="12.954" y="38.862" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$33">
-<via x="28.618178125" y="28.3184625" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$23">
-<via x="21.082" y="66.294" extent="1-16" drill="0.6"/>
-</signal>
-<signal name="N$25">
-<via x="24.638" y="49.784" extent="1-16" drill="0.6"/>
+<signal name="N$28">
+<polygon width="0.254" layer="1" pour="cutout">
+<vertex x="43.18" y="14.478"/>
+<vertex x="43.18" y="7.62" curve="90"/>
+<vertex x="43.434" y="7.366"/>
+<vertex x="44.958" y="7.366" curve="90"/>
+<vertex x="45.212" y="7.62"/>
+<vertex x="45.212" y="5.588"/>
+<vertex x="40.894" y="5.588"/>
+<vertex x="40.894" y="-0.254"/>
+<vertex x="49.784" y="-0.254"/>
+<vertex x="49.784" y="14.478"/>
+</polygon>
 </signal>
 </signals>
 </board>

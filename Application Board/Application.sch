@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12724,9 +12724,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="ASV" library="DiscreteComponents" deviceset="ASF*" device="" value="8.000MHZ"/>
 <part name="C11" library="rcl" deviceset="C-US" device="C0603" value="0.1uF"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="DiscreteComponents" deviceset="SWITCH" device=""/>
+<part name="S1" library="DiscreteComponents" deviceset="SWITCH" device="" value="BOOT"/>
 <part name="U$1" library="Other" deviceset="STM32F405" device=""/>
-<part name="S2" library="DiscreteComponents" deviceset="SWITCH" device=""/>
+<part name="S2" library="DiscreteComponents" deviceset="SWITCH" device="" value="RESET"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="10K"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
@@ -12772,13 +12772,13 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R_OFF" library="DiscreteComponents" deviceset="R-US_" device="R0603" value="7.87K"/>
 <part name="R_SNS" library="DiscreteComponents" deviceset="R-US_" device="R2512" value="0.365"/>
 <part name="R_PD" library="DiscreteComponents" deviceset="R-US_" device="R0603" value="10K"/>
-<part name="L1" library="DiscreteComponents" deviceset="SRN8040" device="" value="15E-6"/>
+<part name="L1" library="DiscreteComponents" deviceset="SRN8040" device="" value="15u"/>
 <part name="D6" library="DiscreteComponents" deviceset="SL12-E3/61T" device=""/>
 <part name="Q1" library="DiscreteComponents" deviceset="DMP2012SN-7" device=""/>
-<part name="C_F" library="eagle-ltspice" deviceset="C" device="C0603" value="1.0E-6"/>
-<part name="C_IN2" library="eagle-ltspice" deviceset="C" device="C0603" value="2.2E-6"/>
-<part name="C_IN1" library="eagle-ltspice" deviceset="C" device="C0603" value="2.2E-6"/>
-<part name="C_OFF" library="eagle-ltspice" deviceset="C" device="C0402" value="470E-12"/>
+<part name="C_F" library="eagle-ltspice" deviceset="C" device="C0603" value="1.0uF"/>
+<part name="C_IN2" library="eagle-ltspice" deviceset="C" device="C0603" value="2.2uF"/>
+<part name="C_IN1" library="eagle-ltspice" deviceset="C" device="C0603" value="2.2uF"/>
+<part name="C_OFF" library="eagle-ltspice" deviceset="C" device="C0402" value="470pF"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
