@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.01" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.0001" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,19 +23,19 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -156,7 +156,7 @@
 <wire x1="49.53" y1="68.58" x2="-3.302" y2="68.58" width="0" layer="20"/>
 <wire x1="-3.302" y1="68.58" x2="-3.302" y2="0" width="0" layer="20"/>
 <text x="34.036" y="14.732" size="2.1844" layer="121" rot="R180">Application Board</text>
-<text x="26.416" y="31.242" size="0.6096" layer="21">C_IN1</text>
+<text x="27.178" y="28.448" size="0.6096" layer="25" rot="R90">C_IN1</text>
 <text x="3.81" y="8.382" size="0.6096" layer="21">CAM_LEDV</text>
 <text x="9.652" y="8.636" size="0.6096" layer="21">+5V</text>
 <text x="14.986" y="8.636" size="0.6096" layer="21">+12V</text>
@@ -3291,11 +3291,11 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="VALUE" x="29.486859375" y="24.7523" size="0.6096" layer="27"/>
 </element>
 <element name="C_IN1" library="resistor" package="C0603" value="2.2uF" x="27.27451875" y="29.601159375" smashed="yes" rot="R270">
-<attribute name="VALUE" x="26.13151875" y="30.236159375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="VALUE" x="27.65551875" y="30.490159375" size="0.6096" layer="27" rot="R270"/>
 </element>
 <element name="C_IN2" library="resistor" package="C0603" value="2.2uF" x="25.11551875" y="29.601159375" smashed="yes" rot="R270">
-<attribute name="NAME" x="23.84551875" y="31.252159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="23.97251875" y="30.236159375" size="0.6096" layer="27" rot="R270"/>
+<attribute name="NAME" x="24.881840625" y="28.41751875" size="0.6096" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.24251875" y="30.490159375" size="0.6096" layer="27" rot="R270"/>
 </element>
 <element name="C_OFF" library="resistor" package="C0603" value="470pF" x="18.76551875" y="26.045159375" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.2593" y="23.876" size="0.6096" layer="25"/>
@@ -3312,24 +3312,24 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <attribute name="NAME" x="11.01831875" y="26.232759375" size="0.6096" layer="25" rot="R180"/>
 </element>
 <element name="R_OFF" library="DiscreteComponents" package="R0603" value="7.87K" x="14.95551875" y="30.490159375" smashed="yes">
-<attribute name="NAME" x="13.43151875" y="31.633159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="13.55851875" y="28.839159375" size="0.6096" layer="27"/>
+<attribute name="NAME" x="13.93951875" y="30.871159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="14.06651875" y="29.601159375" size="0.6096" layer="27"/>
 </element>
 <element name="R_PD" library="DiscreteComponents" package="R0603" value="10K" x="18.63851875" y="30.490159375" smashed="yes">
-<attribute name="NAME" x="16.98751875" y="31.633159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="16.98751875" y="28.839159375" size="0.6096" layer="27"/>
+<attribute name="NAME" x="17.74951875" y="30.871159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="18.00351875" y="29.601159375" size="0.6096" layer="27"/>
 </element>
 <element name="R_SNS" library="DiscreteComponents" package="R2512" value="0.365" x="37.56151875" y="26.045159375" smashed="yes">
 <attribute name="NAME" x="34.13251875" y="28.077159375" size="0.6096" layer="25"/>
 <attribute name="VALUE" x="34.25951875" y="23.378159375" size="0.6096" layer="27"/>
 </element>
 <element name="R_UV1" library="DiscreteComponents" package="R0603" value="22.6K" x="22.19451875" y="28.585159375" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.817840625" y="29.30651875" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="23.33751875" y="27.950159375" size="0.6096" layer="27" rot="R180"/>
+<attribute name="NAME" x="21.071840625" y="28.79851875" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="23.08351875" y="28.458159375" size="0.6096" layer="27" rot="R180"/>
 </element>
 <element name="R_UV2" library="DiscreteComponents" package="R0603" value="13.7K" x="22.19451875" y="30.617159375" smashed="yes">
-<attribute name="NAME" x="20.92451875" y="32.141159375" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="21.028659375" y="31.353759375" size="0.6096" layer="27"/>
+<attribute name="NAME" x="21.17851875" y="30.871159375" size="0.6096" layer="25"/>
+<attribute name="VALUE" x="21.282659375" y="29.829759375" size="0.6096" layer="27"/>
 </element>
 <element name="U1" library="2015_LED_Driver" package="VSSOP-10" value="LM3409HV" x="25.62351875" y="25.918159375" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.992840625" y="23.59151875" size="0.6096" layer="25"/>
