@@ -857,8 +857,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </classes>
 <parts>
 <part name="D1" library="2015_LED_Driver" deviceset="CREE" device=""/>
-<part name="CAM_LEDV" library="testpad" deviceset="PTR1" device="PAD1-20"/>
-<part name="GND" library="testpad" deviceset="PTR1" device="PAD1-20"/>
+<part name="ANODE" library="testpad" deviceset="PTR1" device="PAD1-20"/>
+<part name="CATHODE" library="testpad" deviceset="PTR1" device="PAD1-20"/>
 </parts>
 <sheets>
 <sheet>
@@ -866,8 +866,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </plain>
 <instances>
 <instance part="D1" gate="G$1" x="43.18" y="60.96"/>
-<instance part="CAM_LEDV" gate="G$1" x="43.18" y="68.58" rot="R180"/>
-<instance part="GND" gate="G$1" x="43.18" y="50.8"/>
+<instance part="ANODE" gate="G$1" x="43.18" y="68.58" rot="R180"/>
+<instance part="CATHODE" gate="G$1" x="43.18" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -875,14 +875,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="CAM_LEDV" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="CAM_LEDV" gate="G$1" pin="TP"/>
+<pinref part="ANODE" gate="G$1" pin="TP"/>
 <wire x1="43.18" y1="66.04" x2="43.18" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="GND" gate="G$1" pin="TP"/>
+<pinref part="CATHODE" gate="G$1" pin="TP"/>
 <wire x1="43.18" y1="53.34" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
